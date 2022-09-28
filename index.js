@@ -84,9 +84,12 @@ const teacherRouter = require('./routes/teacher');
 const challengeRouter = require('./routes/challenge'); 
 const quizRouter = require('./routes/quiz');
 const reportRouter=require('./routes/reports');
+const busboy = require('connect-busboy')
+
+
 const app = express()
 const port = process.env.PORT || 3000
-
+app.use(busboy())
 app.use(cors())
 app.use(express.json())
 app.use('/api/v1/user',userRouter)

@@ -1,10 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-
-// set mongodb url with password and username
-//mongodb://myDBReader:D1fficultP%40ssw0rd@mongodb0.example.com:27017/?authSource=admin
-
-var dbURI = 'mongodb://thutoquiz:thuto123@127.0.0.1/ThutoQuiz';
+var dbURI = 'mongodb://127.0.0.1/ThutoQuizs';
 // if (process.env.NODE_ENV === 'production') {
 //   dbURI = process.env.MONGOLAB_URI;
 // }
@@ -12,7 +8,6 @@ var dbURI = 'mongodb://thutoquiz:thuto123@127.0.0.1/ThutoQuiz';
 mongoose.connect(dbURI, {
   autoIndex: true,
   useCreateIndex: true,
-
 });
 
 // CONNECTION EVENTS

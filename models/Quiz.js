@@ -40,7 +40,7 @@ var quizSchema = new mongoose.Schema({
                 type: String,
                 // unique:true,
                 required: true,
-                maxlength: 120
+                maxlength: 512
             },
             questionType: {
                 type: String,            //input: "MCQ" or "True or False"
@@ -61,25 +61,25 @@ var quizSchema = new mongoose.Schema({
                     type: String,
                     required: true,
                     // unique: true,
-                    maxlength: 75
+                    maxlength: 200
                 },
                 option2: {
                     type: String,
                     required: true,
                     // unique: true,
-                    maxlength: 75
+                    maxlength: 200
                 },
                 option3: {
                     type: String,
                     required: false,
                     // unique: true,
-                    maxlength: 75
+                    maxlength: 200
                 },
                 option4: {
                     type: String,
                     required: false,
                     // unique: true,
-                    maxlength: 75
+                    maxlength: 200
                 },
 
             },
