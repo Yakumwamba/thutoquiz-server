@@ -45,7 +45,8 @@ module.exports.myQuizzes = async(req,res) => {
     const token = req.header('authorization').replace('Bearer ', '')
     const decoded = jwt.verify(token, 'MY_SECRET')
     const user=await User.findById(decoded._id)
-        const quiz = await Quiz.find({})
+        const quiz = await Quiz.find()
+        // get all the quizzes from all users 
         console.log("QUIZZEESSS")
 
     var response = {
