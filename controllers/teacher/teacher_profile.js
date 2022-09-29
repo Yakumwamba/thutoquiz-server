@@ -44,10 +44,12 @@ module.exports.myQuizzes = async(req,res) => {
     try{    
     const token = req.header('authorization').replace('Bearer ', '')
     const decoded = jwt.verify(token, 'MY_SECRET')
+    console.log("getting quizzes")
     const user=await User.findById(decoded._id)
         const quiz = await Quiz.find()
+        
         // get all the quizzes from all users 
-        console.log("QUIZZEESSS")
+        console.log(quiz)
 
     var response = {
         "success": true, 
