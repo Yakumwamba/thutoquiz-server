@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://127.0.0.1/ThutoQuizs';
+var dbURI = 'mongodb+srv://quizapp:quizapppassword@thutotime.ib80a.mongodb.net/thutoquiz';
 // if (process.env.NODE_ENV === 'production') {
 //   dbURI = process.env.MONGOLAB_URI;
 // }
