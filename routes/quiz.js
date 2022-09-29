@@ -5,7 +5,7 @@ var Auth = require('../controllers/authentication');
 var createQuiz = require('../controllers/quiz/createQuiz');
 var deleteQuiz = require('../controllers/quiz/deleteQuiz');
 var modifyQuiz = require('../controllers/quiz/modifyQuiz');
-var uploadQuestionImage = require('../controllers/quiz/uploadquestionimage');
+//var uploadQuestionImage = require('../controllers/quiz/uploadquestionimage');
 // calling "createquiz" function of createQuiz.js file
 router.post('/createquiz', createQuiz.createquiz);
 router.post('/deletequiz', deleteQuiz.deletequiz);
@@ -28,5 +28,5 @@ var storage = multer.diskStorage({
 var  upload = multer({storage: storage })
 
 
-router.post('/uploadquestionimage', upload.single("question_image"), uploadQuestionImage.uploadquestionimage);
+//router.post('/uploadquestionimage', upload.single("question_image"), uploadQuestionImage.uploadquestionimage);
 module.exports = router
