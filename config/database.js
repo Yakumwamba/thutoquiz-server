@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'thutotimequiz:27017/thutoquiz';
+var dbURI = 'mongodb://thutotimequiz:27017/thutoquiz';
 // if (process.env.NODE_ENV === 'production') {
 //   dbURI = process.env.MONGOLAB_URI;
 // }
