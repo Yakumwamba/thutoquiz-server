@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://127.0.0.1:27017/ThutoQuizs';
+var dbURI = 'mongodb://127.0.0.1:27017/ThutoQuizs?authSource=admin';
 // if (process.env.NODE_ENV === 'production') {
 //   dbURI = process.env.MONGOLAB_URI;
 // }
